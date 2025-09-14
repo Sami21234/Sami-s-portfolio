@@ -1,0 +1,106 @@
+#contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.leftContact{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftContact img{
+    width: 50%;
+    filter: drop-shadow(2px 2px 10px rgb(87, 196, 220));
+}
+
+.rightContact{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 80%;
+    height: 70%;
+    background-color: rgb(19, 25, 29);
+    box-shadow: 2px 2px 10px black, 2px 2px 20px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+form:hover{
+    box-shadow: 2px 3px 10px rgb(105, 208, 215), 2px 3px 20px rgb(105, 208, 215);
+    transform: scale(1.2);
+}
+
+form input{
+    width: 80%;
+    height: 50px;
+    border: 3px solid rgb(105, 208, 215);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 18px;
+    outline: none;
+}
+
+#text-area{
+    width: 80%;
+    height: 150px;
+    border: 3px solid rgb(105, 208, 215);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 18px;   
+    outline: none;
+}
+
+#Submit{
+    width: 100px;
+    height: 50px;
+    background-color:  rgb(105, 208, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 18px;
+    transform: all 0.3s;
+    cursor: pointer;
+}
+
+#Submit:hover{
+    background: transparent;
+    color: rgb(105, 208, 215);
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+@media (max-width:750px) {
+    #contact{
+        flex-direction: column;
+    }
+
+    .leftContact{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .leftContact img{
+        width: 70%;
+    }
+
+    .rightContact{
+        width: 100%;
+    }
+}

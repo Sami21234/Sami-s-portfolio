@@ -1,0 +1,91 @@
+#about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.leftAbout {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.circle-Line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: rgb(66, 180, 205);
+    box-shadow: 2px 2px 20px rgb(66, 180, 205);
+}
+
+.line {
+    width: 2px;
+    height: 120px;
+    background-color: white;
+}
+
+.aboutDetails {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.aboutDetails ul {
+    list-style: none;
+}
+
+.aboutDetails h1 {
+    background: linear-gradient(to right, rgb(198, 42, 96), white);
+    background-clip: text;
+    color: transparent;
+}
+
+.aboutDetails li {
+    color: white;
+}
+
+.aboutDetails span {
+    color: rgb(66, 180, 205);
+}
+
+.rightAbout{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* responsive designs */
+
+@media (max-width:750px) {
+    #about{
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .leftAbout{
+        width: 100%;
+        height: 80vh;
+        padding: 10px;
+    }
+
+    .rightAbout{
+        width: 100%;
+    }
+
+}
